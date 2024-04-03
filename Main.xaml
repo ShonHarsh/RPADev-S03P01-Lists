@@ -156,11 +156,7 @@
     </Sequence>
     <Sequence DisplayName="Sequence Operation" sap:VirtualizedContainerService.HintSize="608,1287" sap2010:WorkflowViewState.IdRef="Sequence_3">
       <Sequence.Variables>
-        <Variable x:TypeArguments="x:Int32" Name="intCount">
-          <Variable.Default>
-            <Literal x:TypeArguments="x:Int32" />
-          </Variable.Default>
-        </Variable>
+        <Variable x:TypeArguments="x:Int32" Default="0" Name="intCount" />
       </Sequence.Variables>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -193,7 +189,7 @@
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <If sap:VirtualizedContainerService.HintSize="450,535" sap2010:WorkflowViewState.IdRef="If_1">
+              <If DisplayName="If Validate Country Count" sap:VirtualizedContainerService.HintSize="450,535" sap2010:WorkflowViewState.IdRef="If_1">
                 <If.Condition>
                   <InArgument x:TypeArguments="x:Boolean">
                     <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_12">intCount &lt; 3</CSharpValue>
@@ -252,7 +248,7 @@
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,164" sap2010:WorkflowViewState.IdRef="LogMessage_1">
+      <ui:LogMessage DisplayName="Log Message RPADev-S03P01-Lists.Main.Print;" sap:VirtualizedContainerService.HintSize="388,164" sap2010:WorkflowViewState.IdRef="LogMessage_1">
         <ui:LogMessage.Level>
           <InArgument x:TypeArguments="ui:LogLevel">
             <CSharpValue x:TypeArguments="ui:LogLevel" sap2010:WorkflowViewState.IdRef="CSharpValue`1_6">UiPath.Core.Activities.LogLevel.Info</CSharpValue>
@@ -265,7 +261,7 @@
         </ui:LogMessage.Message>
       </ui:LogMessage>
     </Sequence>
-    <ui:LogMessage DisplayName="Log Message RPADev-S03P01-Lists.Main.Begin;" sap:VirtualizedContainerService.HintSize="608,164" sap2010:WorkflowViewState.IdRef="LogMessage_3">
+    <ui:LogMessage DisplayName="Log Message RPADev-S03P01-Lists.Main.End;" sap:VirtualizedContainerService.HintSize="608,164" sap2010:WorkflowViewState.IdRef="LogMessage_3">
       <ui:LogMessage.Level>
         <InArgument x:TypeArguments="ui:LogLevel">
           <CSharpValue x:TypeArguments="ui:LogLevel" sap2010:WorkflowViewState.IdRef="CSharpValue`1_10">UiPath.Core.Activities.LogLevel.Info</CSharpValue>
